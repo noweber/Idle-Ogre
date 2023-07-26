@@ -70,64 +70,65 @@ Project Ogre utilizes the following technologies to deliver a seamless and enjoy
 - Azure Databricks with Apache Spark: Generating real-time analytics and insights.
 - Azure OpenAI: Dynamically creating captivating in-game content through serverless functions.
 
-## Architecture Overview
+Architecture Overview
+  +-----------------+
+  | User Interface  |  [![Angular 16](ui_image)](https://example.com/ui) [![PixiJS](pixijs_image)](https://example.com/ui)
+  | (Angular 16,    |  [Angular 16](https://example.com/ui) [PixiJS](https://example.com/ui)
+  |   PixiJS)       |
+  +-------+---------+
+          |
+          |
+          v
+  +-----------------+
+  |   API Layer     |  [![C# .NET 7](csharp_image)](https://example.com/api-docs)
+  | (C# .NET 7)     |  [C# .NET 7](https://example.com/api-docs)
+  +-------+---------+
+          |
+          |
+          v
+  +-----------------+
+  | Data Storage    |
+  | +-------------+ |    [![Azure BLOB Storage](blob_image)](https://example.com/blobs)
+  | | Azure BLOB  | |    [Azure BLOB Storage](https://example.com/blobs)
+  | |  Storage    | |
+  | +-------------+ |    [![Azure SQL](sql_image)](https://example.com/sql)
+  | +-------------+ |    [Azure SQL](https://example.com/sql)
+  | | Azure SQL   | |
+  | +-------------+ |    [![Azure Cosmos DB](cosmos_image)](https://example.com/cosmos)
+  | +-------------+ |    [Azure Cosmos DB](https://example.com/cosmos)
+  | |Azure Cosmos | |
+  | |   DB        | |
+  | +-------------+ |
+  +-------+---------+
+          |
+          |
+          v
+  +-----------------+
+  |Event Processing |   [![Azure Event Hubs](event_hubs_image)](https://example.com/event-hubs)
+  | (Azure Event    |   [Azure Event Hubs](https://example.com/event-hubs)
+  |  Hubs, Kafka    |   [![Azure Databricks](databricks_image)](https://example.com/databricks)
+  |    API)         |   [Azure Databricks](https://example.com/databricks)
+  |                 |
+  +-------+---------+
+          |
+          |
+          v
+  +-----------------+
+  | Real-time       |
+  |  Analytics      |
+  | (Azure Databricks|
+  |  with Apache    |
+  |      Spark)     |
+  +-------+---------+
+          |
+          |
+          v
+  +-----------------+
+  |Serverless       |
+  |  Functions      |   [![Azure OpenAI](openai_image)](https://example.com/openai)
+  | (Azure OpenAI)  |   [Azure OpenAI](https://example.com/openai)
+  +-----------------+
 
-   +-----------------+
-   |  User Interface |
-   | (Angular 16,   |
-   |   PixiJS)      |
-   +-------+---------+
-           |
-           |
-           v
-   +-----------------+
-   |   API Layer     |
-   | (C# .NET 7)     |
-   +-------+---------+
-           |
-           |
-           v
-   +-----------------+
-   | Data Storage    |
-   | +-------------+ |
-   | | Azure BLOB  | |
-   | |  Storage    | |
-   | +-------------+ |
-   | +-------------+ |
-   | | Azure SQL   | |
-   | +-------------+ |
-   | +-------------+ |
-   | |Azure Cosmos | |
-   | |   DB        | |
-   | +-------------+ |
-   +-------+---------+
-           |
-           |
-           v
-   +-----------------+
-   |Event Processing |
-   | (Azure Event    |
-   |  Hubs, Kafka    |
-   |    API)         |
-   +-------+---------+
-           |
-           |
-           v
-   +-----------------+
-   | Real-time       |
-   |  Analytics      |
-   | (Azure Databricks|
-   |  with Apache    |
-   |      Spark)     |
-   +-------+---------+
-           |
-           |
-           v
-   +-----------------+
-   |Serverless       |
-   |  Functions      |
-   | (Azure OpenAI)  |
-   +-----------------+
 
 ## Getting Started
 
