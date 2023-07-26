@@ -70,26 +70,68 @@ Project Ogre utilizes the following technologies to deliver a seamless and enjoy
 - Azure Databricks with Apache Spark: Generating real-time analytics and insights.
 - Azure OpenAI: Dynamically creating captivating in-game content through serverless functions.
 
-Architecture Overview:
-   +-----------------+  +-----------------+  +-----------------+  +-----------------+  +-----------------+  +-----------------+
-   | User Interface  |  |   API Layer     |  | Data Storage    |  |Event Processing |  | Real-time       |  |Serverless       |
-   | (Angular 16,    |  | (C# .NET 7)     |  | +-------------+ |  | (Azure Event    |  |  Analytics      |  |  Functions      |
-   |   PixiJS)       |  +-------+---------+  | | Azure BLOB  | |  |  Hubs, Kafka    |  | (Azure Databricks|  | (Azure OpenAI)  |
-   +-----------------+          |            | |  Storage    | |  |    API)         |  |  with Apache    |  +-----------------+
-                                |            | +-------------+ |  |                 |  |      Spark)     |
-                                v            | +-------------+ |  +-------+---------+  +-------+---------+
-                               [Angular 16]   | | Azure SQL   | |          |                      |
-                                            | +-------------+ |          |                      |
-                                            | +-------------+ |          |                      |
-                                            | |Azure Cosmos | |          |                      |
-                                            | |   DB        | |          |                      |
-                                            | +-------------+ |          v                      v
-                                            +-----------------+       [Azure Event Hubs]     [Azure Databricks]
-                                                                           |                      |
-                                                                           v                      v
-                                                                      [Azure BLOB Storage]   [Azure OpenAI]
-                                                                      [Azure SQL]            [Azure OpenAI]
-                                                                      [Azure Cosmos DB]
+<details>
+<summary>Architecture Overview</summary>
+<pre>
+  +-----------------+
+  | User Interface  |  [Angular 16](https://example.com/ui) [PixiJS](https://example.com/ui)
+  | (Angular 16,    |  
+  |   PixiJS)       |  
+  +-------+---------+  
+          |  
+          |  
+          v  
+  +-----------------+  
+  |   API Layer     |  [C# .NET 7](https://example.com/api-docs)
+  | (C# .NET 7)     |  
+  +-------+---------+  
+          |  
+          |  
+          v  
+  +-----------------+  
+  | Data Storage    |  
+  | +-------------+ |    [Azure BLOB Storage](https://example.com/blobs)  
+  | | Azure BLOB  | |    [Azure SQL](https://example.com/sql)  
+  | |  Storage    | |    [Azure Cosmos DB](https://example.com/cosmos)  
+  | +-------------+ |  
+  | +-------------+ |  
+  | | Azure SQL   | |  
+  | +-------------+ |  
+  | +-------------+ |  
+  | |Azure Cosmos | |  
+  | |   DB        | |  
+  | +-------------+ |  
+  +-------+---------+  
+          |  
+          |  
+          v  
+  +-----------------+  
+  |Event Processing |   [Azure Event Hubs](https://example.com/event-hubs)  
+  | (Azure Event    |   [Azure Databricks](https://example.com/databricks)  
+  |  Hubs, Kafka    |  
+  |    API)         |  
+  |                 |  
+  +-------+---------+  
+          |  
+          |  
+          v  
+  +-----------------+  
+  | Real-time       |  
+  |  Analytics      |  
+  | (Azure Databricks|  
+  |  with Apache    |  
+  |      Spark)     |  
+  +-------+---------+  
+          |  
+          |  
+          v  
+  +-----------------+  
+  |Serverless       |  
+  |  Functions      |   [Azure OpenAI](https://example.com/openai)  
+  | (Azure OpenAI)  |  
+  +-----------------+
+</pre>
+</details>
 
 ## Getting Started
 
