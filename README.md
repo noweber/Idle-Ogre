@@ -150,7 +150,3 @@ Azure Event Hubs serves as a real-time data ingestion service, receiving events 
 ### Azure DataBricks (Apache Spark)
 
 Azure DataBricks provides an Apache Spark-based analytics platform for real-time analytics on battle data events coming from Azure Event Hubs. This analytics pipeline processes, aggregates, and derives insights from the battle data, helping to improve game balance and understand player behavior.
-
-## Getting Started
-
-To begin your adventure in Project Ogre, follow the steps in [Getting Started](link_to_getting_started_guide.md) to set up the game, create your character, and explore the fantastical world.
