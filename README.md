@@ -85,7 +85,11 @@ Project Ogre utilizes the following technologies to deliver a seamless and enjoy
 - Azure Event Hubs with Kafka API: Handling real-time event processing.
 - Azure Databricks with Apache Spark: Generating real-time analytics and insights.
 - Azure OpenAI: Dynamically creating captivating in-game content through serverless functions.
-- 
+
+# Game Architecture
+
+Below is a high-level overview of the game's architecture, consisting of various interconnected components that facilitate player interactions and data flow.
+
 ```plaintext
 Game Architecture
 
@@ -99,7 +103,6 @@ Player (via Angular App)  ---> | Azure Kubernetes Services (API Microservices) |
                                                        |
                                                        V
                                                  Azure DataBricks (Apache Spark)
-
 ```
 
 ## Architectural Components
