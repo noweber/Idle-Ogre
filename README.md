@@ -16,8 +16,25 @@ Welcome to Project Ogre, an epic and immersive gaming experience where you can e
 - [License](#license)
 
 ## Introduction
+### Game Summary
 
-In Project Ogre, players dive into a realm of fantasy where they can create unique characters, assemble powerful parties, and strategize to conquer challenges. The game boasts an array of features, including character customization, party configurations, complex spell effects, PvP battles, ELO ranking, engaging single-player campaigns, and a captivating narrative that unfolds based on character and player actions.
+Welcome to **Project Ogre**, an online Strategy RPG that sets itself apart by valuing meaningful choices, trade-offs, diminishing returns, and ingenuity over the typical MMO gear treadmills or real-time strategy "actions per minute." Embrace a world of infinite complexity without the grind or APM pressure.
+
+#### Game Mechanics
+
+In **Project Ogre**, your decisions matter more than ever. The game is designed to emphasize the importance of thoughtful choices, where every move and action carries significant weight. Trade-offs play a crucial role in shaping your character's journey, party dynamics, and resource management. No longer will you find yourself caught in endless gear grind cycles; instead, you'll discover a deeply rewarding experience that favors intelligence and cunning over repetitive tasks.
+
+#### Infinite Complexity
+
+Prepare to immerse yourself in a realm of boundless complexity. **Project Ogre** thrives on providing players with infinite possibilities and intricate interactions. Embrace the challenge of navigating through a world that continuously adapts and evolves based on your decisions. Uncover the depth of the game through inventive strategies, unique character builds, and creative combinations of various game elements.
+
+## ##No Grind or APM Pressure
+
+Bid farewell to the days of tedious grinding and the constant pressure of actions per minute. **Project Ogre** embraces a refreshing approach that prioritizes the enjoyment of the gameplay experience. Immerse yourself in a world where tactical planning, strategy, and creative thinking are celebrated, and where every moment spent in the game feels meaningful and rewarding.
+
+Whether you're a seasoned Strategy RPG veteran or new to the genre, **Project Ogre** welcomes you to a captivating realm where your choices shape your destiny, and where the pursuit of depth and ingenuity takes center stage.
+
+Are you ready to embark on an epic adventure, where your intellect and creativity are your greatest assets? Join the world of **Project Ogre** today!
 
 ## Features
 
@@ -57,7 +74,6 @@ Project Ogre delivers an ever-evolving world filled with epic battles, intriguin
 
 ---
 
-
 ## Technologies Used
 
 Project Ogre utilizes the following technologies to deliver a seamless and enjoyable gaming experience:
@@ -69,82 +85,69 @@ Project Ogre utilizes the following technologies to deliver a seamless and enjoy
 - Azure Event Hubs with Kafka API: Handling real-time event processing.
 - Azure Databricks with Apache Spark: Generating real-time analytics and insights.
 - Azure OpenAI: Dynamically creating captivating in-game content through serverless functions.
+- 
+```plaintext
+Game Architecture
 
-<details>
-<summary>Architecture Overview</summary>
-<pre>
-  +-----------------+
-  | User Interface  |  [Angular 16](https://example.com/ui) [PixiJS](https://example.com/ui)
-  | (Angular 16,    |  
-  |   PixiJS)       |  
-  +-------+---------+  
-          |  
-          |  
-          v  
-  +-----------------+  
-  |   API Layer     |  [C# .NET 7](https://example.com/api-docs)
-  | (C# .NET 7)     |  
-  +-------+---------+  
-          |  
-          |  
-          v  
-  +-----------------+  
-  | Data Storage    |  
-  | +-------------+ |    [Azure BLOB Storage](https://example.com/blobs)  
-  | | Azure BLOB  | |    [Azure SQL](https://example.com/sql)  
-  | |  Storage    | |    [Azure Cosmos DB](https://example.com/cosmos)  
-  | +-------------+ |  
-  | +-------------+ |  
-  | | Azure SQL   | |  
-  | +-------------+ |  
-  | +-------------+ |  
-  | |Azure Cosmos | |  
-  | |   DB        | |  
-  | +-------------+ |  
-  +-------+---------+  
-          |  
-          |  
-          v  
-  +-----------------+  
-  |Event Processing |   [Azure Event Hubs](https://example.com/event-hubs)  
-  | (Azure Event    |   [Azure Databricks](https://example.com/databricks)  
-  |  Hubs, Kafka    |  
-  |    API)         |  
-  |                 |  
-  +-------+---------+  
-          |  
-          |  
-          v  
-  +-----------------+  
-  | Real-time       |  
-  |  Analytics      |  
-  | (Azure Databricks|  
-  |  with Apache    |  
-  |      Spark)     |  
-  +-------+---------+  
-          |  
-          |  
-          v  
-  +-----------------+  
-  |Serverless       |  
-  |  Functions      |   [Azure OpenAI](https://example.com/openai)  
-  | (Azure OpenAI)  |  
-  +-----------------+
-</pre>
-</details>
+Player (via Angular App)  ---> | Azure Kubernetes Services (API Microservices) | ---> Azure SQL Database
+                                 |     (Load Balanced and Traffic Managed)    | ---> Azure Storage
+                                 |                                          | <--- Azure Cosmos DB   |
+                                 |                                          |                         |
+                                 |------------------> Azure OpenAI Service   |   Azure Functions <----|
+                                 |                                          |
+                                 |------------------> Azure Event Hubs (Kafka Interface)
+                                                       |
+                                                       V
+                                                 Azure DataBricks (Apache Spark)
+
+```
+
+## Architectural Components
+
+### UI (Angular App)
+
+The front-end of the game where users interact with the game's user interface. You can access the UI by visiting [Project Ogre UI](https://project-ogre-ui.azurewebsites.net/).
+
+### API (Azure Kubernetes Services)
+
+The API layer consists of a set of microservices hosted on Azure Kubernetes Services (AKS) handling player interactions and data storage. To access the API, use [Project Ogre API](https://project-ogre-api.azurewebsites.net/).
+
+### Player (via Angular App)
+
+The Angular-based web application serves as the player's interface to the game. Players interact with the UI to view and edit characters and parties, manage their inventory, and initiate quests and PvP battles.
+
+### Azure Kubernetes Services (API Microservices)
+
+The API layer consists of a set of microservices hosted on Azure Kubernetes Services (AKS). These microservices handle interactions between the player's UI and various data storage components. They receive information from the Angular App related to character and party changes, inventory management, quests, and PvP battles.
+
+### Azure SQL Database
+
+A fully managed relational database used to store critical game-related data, including player characters, parties, inventory, and quest progress. The API microservices communicate with the database to read and update player information based on user interactions.
+
+### Azure Storage (Azure BLOB Cold Storage)
+
+The battle data resulting from PvP battles is stored in Azure BLOB cold storage. This data is primarily used for two purposes: the initial replay by the user to review the battle and analytics processing through Azure DataBricks.
+
+### Azure Cosmos DB
+
+A NoSQL database that stores graph and unstructured narrative data related to characters, players, and the game world. It captures and manages complex narrative elements and world events that evolve based on player actions.
+
+### Azure OpenAI Service
+
+This service enhances the game's narrative during player versus environment (PvE) questing events. Azure Functions utilize the OpenAI Service to dynamically generate and evolve the narrative based on player choices and outcomes during quests.
+
+### Azure Functions
+
+Azure Functions play a crucial role in handling backend tasks. They react to PvE questing events initiated by players and use the Azure OpenAI Service to generate the next increment of the narrative. Additionally, Azure Functions detect the creation of new blobs in Azure Storage (resulting from PvP battles), parse these files, and emit events into Azure Event Hubs.
+
+### Azure Event Hubs (with Kafka interface)
+
+Azure Event Hubs serves as a real-time data ingestion service, receiving events emitted by Azure Functions. It handles both battle data events from Azure Storage and PvE questing events generated by Azure OpenAI Service, making them available for consumption by downstream components.
+
+### Azure DataBricks (Apache Spark)
+
+Azure DataBricks provides an Apache Spark-based analytics platform for real-time analytics on battle data events coming from Azure Event Hubs. This analytics pipeline processes, aggregates, and derives insights from the battle data, helping to improve game balance and understand player behavior.
 
 ## Getting Started
 
 To begin your adventure in Project Ogre, follow the steps in [Getting Started](link_to_getting_started_guide.md) to set up the game, create your character, and explore the fantastical world.
-
-## API Documentation
-
-The API documentation is available [here](https://example.com/api-docs) to help you understand the available endpoints and interact with the game's API.
-
-## Contributing
-
-We warmly welcome contributions from the community to enhance and expand Project Ogre. To learn more about how to contribute, check out our [Contribution Guidelines](link_to_contribution_guidelines.md).
-
-## License
-
-Project Ogre is open-source software licensed under the [MIT License](LICENSE.md).
