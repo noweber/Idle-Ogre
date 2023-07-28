@@ -28,7 +28,7 @@ In **Project Ogre**, your decisions matter more than ever. The game is designed 
 
 Prepare to immerse yourself in a realm of boundless complexity. **Project Ogre** thrives on providing players with infinite possibilities and intricate interactions. Embrace the challenge of navigating through a world that continuously adapts and evolves based on your decisions. Uncover the depth of the game through inventive strategies, unique character builds, and creative combinations of various game elements.
 
-## ##No Grind or APM Pressure
+#### No Grind or APM Pressure
 
 Bid farewell to the days of tedious grinding and the constant pressure of actions per minute. **Project Ogre** embraces a refreshing approach that prioritizes the enjoyment of the gameplay experience. Immerse yourself in a world where tactical planning, strategy, and creative thinking are celebrated, and where every moment spent in the game feels meaningful and rewarding.
 
