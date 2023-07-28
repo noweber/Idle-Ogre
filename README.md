@@ -150,3 +150,7 @@ Azure Event Hubs serves as a real-time data ingestion service, receiving events 
 ### Azure DataBricks (Apache Spark)
 
 Azure DataBricks provides an Apache Spark-based analytics platform for real-time analytics on battle data events coming from Azure Event Hubs. This analytics pipeline processes, aggregates, and derives insights from the battle data, helping to improve game balance and understand player behavior.
+
+# Prototypes
+## Data Analytics
+[Project 88](https://github.com/noweber/Project-88)
