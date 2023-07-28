@@ -9,7 +9,7 @@ Welcome to Project Ogre, an epic and immersive gaming experience where you can e
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Architecture Overview](#architecture-overview)
+- [Architecture Overview](#architectural-components)
 - [Getting Started](#getting-started)
 - [API Documentation](#api-documentation)
 - [Contributing](#contributing)
