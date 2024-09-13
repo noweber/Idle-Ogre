@@ -1,4 +1,10 @@
-# Project Ogre
+# Idle Ogre
+
+## CI/CD
+- Development Environment:
+    - [![Azure Static Web Apps CI/CD](https://github.com/noweber/Zelirea/actions/workflows/azure-static-web-apps-zealous-mud-0ef58d91e.yml/badge.svg)](https://github.com/noweber/Zelirea/actions/workflows/azure-static-web-apps-zealous-mud-0ef58d91e.yml)
+    - [![API CI/CD](https://github.com/noweber/Zelirea/actions/workflows/dotnet.yml/badge.svg)](https://github.com/noweber/Zelirea/actions/workflows/dotnet.yml)
+    - [Dev Environment Instance](https://zealous-mud-0ef58d91e.5.azurestaticapps.net/)
 
 ![Project Ogre Logo](screenshots/project_ogre_logo.png)
 
