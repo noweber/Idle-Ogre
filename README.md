@@ -6,7 +6,7 @@
 - Development Environment:
     - [![Azure Static Web Apps CI/CD](https://github.com/noweber/Zelirea/actions/workflows/azure-static-web-apps-zealous-mud-0ef58d91e.yml/badge.svg)](https://github.com/noweber/Zelirea/actions/workflows/azure-static-web-apps-zealous-mud-0ef58d91e.yml)
     - [![API CI/CD](https://github.com/noweber/Zelirea/actions/workflows/dotnet.yml/badge.svg)](https://github.com/noweber/Zelirea/actions/workflows/dotnet.yml)
-    - [Alpha Environment Instance](https://zealous-mud-0ef58d91e.5.azurestaticapps.net/)
+    - [Alpha Instance](https://zealous-mud-0ef58d91e.5.azurestaticapps.net/)
       
 ## Summary
 Idle Ogre is an async browser-based massive multiplayer idle RPG. Players gain characters and loot then configure their groups to battle other players and/or the AI.
