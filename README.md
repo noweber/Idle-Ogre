@@ -12,7 +12,7 @@
 Idle Ogre is an async browser-based massive-multiplayer idle RPG. Players gain characters and loot then configure their groups from trillions of different combinations to conquer the world.
 
 ## Technologies Used
-Idle Ogre is built using Angular, .NET APIs, Azure Storage, and MongoDB hosted in Azure Kubernetes Service. Behind the scenes, data analytics pipelines are build using Scala with Azure Event Hubs' Apache Kafka interface and Apache Spark. In additiona, generative AI is used for game balance and tooling to produce the variety of sprites and content seen in this data-driven game.
+Idle Ogre is built using Angular, .NET APIs, Azure Storage, and MongoDB hosted in Microsoft Azure. Behind the scenes, data analytics pipelines are built using Scala with Azure Event Hubs' Apache Kafka interface and Apache Spark. In addition, generative AI is used for game balance, new items and abilities, and tooling to produce the variety of sprites and content seen in this data-driven game.
 
 ## Future Plans
 A public beta is set to open on December 6, 2024. If you are interested in playing the Alpha build, please contact me for an access code required to register.
