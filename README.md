@@ -1,7 +1,7 @@
 # Idle Ogre
       
 ## Summary
-Idle Ogre is a mobile-first, indie, async, massive-multiplayer idle RPG. Players gain characters and loot, then configure their groups from trillions of different combinations to conquer the world.
+Idle Ogre is a mobile-first, indie, async, massive-multiplayer idle RPG. Players gain characters and loot, then configure their armies from trillions of different combinations to conquer the world.
 
 ## Playable Demo
 - [Development Instance](https://zealous-mud-0ef58d91e.5.azurestaticapps.net/)
