@@ -18,6 +18,7 @@ Idle Ogre is built using Angular, .NET APIs, Azure Storage, and MongoDB hosted i
 A public beta is set to open on December 6, 2024. If you are interested in playing the Alpha build, please contact me for an access code required to register. Otherwise please enjoy the screenshots below.
 
 ## Screenshots
+Many views and workflows are intentionally left out of these screenshots, such as character and party editing until the public release. Please contact me if you are interested in scheduling a playtest.
 <div align="center">
   <img src="https://github.com/user-attachments/assets/aeaaf468-c743-4089-a3c0-86e396e04ff6" style="max-width: 100%; height: auto;" alt="image">
   <img src="https://github.com/user-attachments/assets/c4a1b44f-02e0-4eab-a88b-28d4918766f7" style="max-width: 100%; height: auto;" alt="image">
