@@ -9,7 +9,7 @@
     - [Alpha Instance](https://zealous-mud-0ef58d91e.5.azurestaticapps.net/)
       
 ## Summary
-Idle Ogre is an indie, async, browser-based, massive-multiplayer idle RPG. Players gain characters and loot, then configure their groups from trillions of different combinations to conquer the world.
+Idle Ogre is a mobile, indie, async, massive-multiplayer idle RPG. Players gain characters and loot, then configure their groups from trillions of different combinations to conquer the world.
 
 ## Technologies Used
 Idle Ogre is built using Angular, .NET APIs, Azure Storage, and MongoDB hosted in Microsoft Azure. Behind the scenes, data analytics pipelines are built using Scala, Azure Storage, Azure Functions, Azure Event Hubs (Apache Kafka interface), and Apache Spark. In addition, generative AI is used for game balance, new items and abilities, and tooling to produce the variety of sprites and content seen in this data-driven game.
