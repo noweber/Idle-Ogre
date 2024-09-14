@@ -1,21 +1,16 @@
 # Idle Ogre
-
-## Table of Contents
-
-## CI/CD
-- Development Environment:
-    - [![Azure Static Web Apps CI/CD](https://github.com/noweber/Zelirea/actions/workflows/azure-static-web-apps-zealous-mud-0ef58d91e.yml/badge.svg)](https://github.com/noweber/Zelirea/actions/workflows/azure-static-web-apps-zealous-mud-0ef58d91e.yml)
-    - [![API CI/CD](https://github.com/noweber/Zelirea/actions/workflows/dotnet.yml/badge.svg)](https://github.com/noweber/Zelirea/actions/workflows/dotnet.yml)
-    - [Alpha Instance](https://zealous-mud-0ef58d91e.5.azurestaticapps.net/)
       
 ## Summary
 Idle Ogre is a mobile, indie, async, massive-multiplayer idle RPG. Players gain characters and loot, then configure their groups from trillions of different combinations to conquer the world.
+
+## Playable Demo
+- [Development Instance](https://zealous-mud-0ef58d91e.5.azurestaticapps.net/)
 
 ## Technologies Used
 Idle Ogre is built using Angular, .NET APIs, Azure Storage, and MongoDB hosted in Microsoft Azure. Behind the scenes, data analytics pipelines are built using Scala, Azure Storage, Azure Functions, Azure Event Hubs (Apache Kafka interface), and Apache Spark. In addition, generative AI is used for game balance, new items and abilities, and tooling to produce the variety of sprites and content seen in this data-driven game.
 
 ## Future Plans
-A public beta is set to open on December 6, 2024. If you are interested in playing the Alpha build, please contact me for an access code required to register. Otherwise please enjoy the screenshots below.
+A public alpha is set to open on December 6, 2024. If you are interested in playing the Alpha build, please contact me for an access code required to register. Otherwise please enjoy the screenshots below.
 
 ## Screenshots
 Many views and workflows are intentionally left out of these screenshots, such as character and party editing until the public release. Please contact me if you are interested in scheduling a playtest.
