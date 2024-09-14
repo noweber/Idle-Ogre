@@ -30,4 +30,4 @@ Many views and workflows are intentionally left out of these screenshots, such a
 </div>
 
 ## Future Plans
-A public alpha is set to open on December 6, 2024. If you are interested in playing the Alpha build, please contact me for an access code required to register. Otherwise please enjoy the screenshots below.
+A public alpha is set to open on December 6, 2024. If you are interested before that time, please contact me for an access code required to register. Otherwise please enjoy the screenshots.
