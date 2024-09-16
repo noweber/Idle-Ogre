@@ -23,10 +23,10 @@ Many views and workflows are intentionally left out of these screenshots, such a
 
 <h1>Mobile</h1>
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/29b2b488-f496-4926-b6d6-c47cd37d64b0" style="max-width: 50%; height: auto;" alt="image">
-  <img src="https://github.com/user-attachments/assets/7f7c76d5-1524-48db-bd37-1dec9e6e3674" style="max-width: 50%; height: auto;" alt="image">
-  <img src="https://github.com/user-attachments/assets/e35c0791-e26c-4d4c-97d9-5abc0fb7d3b0" style="max-width: 50%; height: auto;" alt="image">
-  <img src="https://github.com/user-attachments/assets/45d2d406-aa32-4a83-8eb9-62eac1738cbe" style="max-width: 50%; height: auto;" alt="image">
+  <img src="https://github.com/user-attachments/assets/29b2b488-f496-4926-b6d6-c47cd37d64b0" style="max-width: 25%; height: auto;" alt="image">
+  <img src="https://github.com/user-attachments/assets/7f7c76d5-1524-48db-bd37-1dec9e6e3674" style="max-width: 25%; height: auto;" alt="image">
+  <img src="https://github.com/user-attachments/assets/e35c0791-e26c-4d4c-97d9-5abc0fb7d3b0" style="max-width: 25%; height: auto;" alt="image">
+  <img src="https://github.com/user-attachments/assets/45d2d406-aa32-4a83-8eb9-62eac1738cbe" style="max-width: 25%; height: auto;" alt="image">
 </div>
 
 ## Future Plans
